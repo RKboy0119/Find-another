@@ -18,6 +18,8 @@ namespace ConsoleApp1
             string[] constellation = { "金牛", "", "巨蟹", "白羊", "雙魚", "雙子", "天蠍", "巨蟹", "獅子", "雙魚", "雙子", "雙子", "獅子", "雙魚", "天蠍", "天蠍", "處女", "處女", "金牛", "雙魚", "處女", "摩羯", "雙魚", "白羊", "天蠍", "處女", "雙子", "金牛", "雙子", "白羊", "白羊", "摩羯", "射手", "巨蟹", "雙魚", "獅子", "射手", "摩羯", "天蠍", "", "雙魚", "雙子", "", "雙魚", "處女", "金牛", "天秤", "水瓶", "巨蟹", "處女", "白羊", "摩羯", "水瓶", "天秤", "金牛", "天蠍", "天蠍", "處女", "", "", "摩羯", "天蠍", "雙子", "", "獅子", "天蠍" };
 
             // 搜尋
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine("請輸入學號(範例:A1060820**):");
             string N = Console.ReadLine();
             int herN = -1;
@@ -30,11 +32,15 @@ namespace ConsoleApp1
             }
 
             // 顯示
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine("");
             Console.WriteLine("個人資料: ");
             Console.WriteLine("");
             Console.WriteLine(M[herN] + " " + SEX[herN]  + " " +constellation[herN] + " " + H[herN] + " 公分");
             Console.WriteLine("");
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("完美身高差公式(女生身高x1.09 = 男生身高)");
             Console.WriteLine("");
 
@@ -61,7 +67,10 @@ namespace ConsoleApp1
                     }
                 }
             }
+
             Console.WriteLine("");
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("不想要異性看這");
             Console.WriteLine("");
             // 另類配對
